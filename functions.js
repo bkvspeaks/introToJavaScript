@@ -40,3 +40,22 @@ function greeting2(yourName) {
 var username = prompt("What is your name? ");
 greeting2(username);
 
+//Function Expression 
+
+const getRandomNumber2 = function() {
+    const randomNumber = Math.floor( Math.random() * 6 ) + 1;
+    return randomNumber;
+  }
+  
+  //vs. Arrow Function
+  
+  const getRandomNumber3 = (upper) => {
+    const randomNumber = Math.floor( Math.random() * upper ) + 1;
+    return randomNumber;
+  }
+  
+console.log("Function Expression")
+console.log(getRandomNumber2());
+
+console.log("Arrow function")
+console.log(getRandomNumber3(20));

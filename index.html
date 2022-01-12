@@ -4,6 +4,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Intro to JS</title>
+    <script>
+        function colorChange(id) {
+            var e1 = document.getElementById(id);
+            var currentClass = el.getAttribute("class");
+            if(currentClass == 'classA') {
+                el.setAttribute("class", "classB");
+            }
+            else {
+                el.setAttribute("class", "classA");
+            }
+        }
+    </script>
+    <style>
+        #select {
+            width: 10em;
+            height: 1.5em;
+        }
+
+        .classA {
+            background: green;
+        }
+
+        .classB {
+            background: rebeccapurple;
+        }
+    </style>
 </head>
 <body>
     <p id = "sometext">This is HTML </p>
@@ -15,27 +41,20 @@
  <script src = "hello.js"> </script>  
     <!--<script src = "data.js"> </script>   
 
-    <script>
-        let students = `[ 
-    {
-        "first": "Brian", 
-        "last": "Vagnini", 
-        "age": 51, 
-        "height": 70
-    },
-    {
-        "first": "Greg", 
-        "last": "Vagnini", 
-        "age": 57, 
-        "height": 69
-    }
-]`
-
 console.log(JSON.parse(students)); 
 //this throws an error: Uncaught SyntaxError: JSON.parse: expected double-quoted property name at line 7 column 5 of the JSON data
 //(this is the "height":70 - if you add the trailing comma (e.g. "height":70,) it throws the error - if you omit it (e.g. "height":70) it's fine)
 // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/JSON_bad_parse 
     </script> -->
+
+    <script>
+        var curdate= new Date();
+        document.write("<br /> <br />");
+        document.write("The Date and Time right now is:");
+        document.write("<br />");
+        document.write(curdate);
+</script>
+<button id='select' class="classA" onClick="window.location.reload();" onmouseover="colorChange('select')";">Click ME!!!</button>
 
 </body>
 </html>

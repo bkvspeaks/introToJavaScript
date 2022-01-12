@@ -14,5 +14,6 @@ Greet the user by name
 */
 
 var yourName = prompt ("What is your name? ");
-    var result = "Hello, " + yourName;
-    console.log(result);
+var result = "Hello, " + yourName; //concatenation (old way)
+console.log(result);
+console.log(`Hello, ${yourName}`); //Template Strings (new way)
