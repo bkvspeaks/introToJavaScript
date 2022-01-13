@@ -1,7 +1,7 @@
 //String methods
 let breakfast = 'banana';
 let moreFruits = 'banana\napple'; //new line
-let stillMoreFruits = 'banana,apple,rutabega'; //new line
+let stillMoreFruits = 'banana,apple,rutabaga'; //new line
 
 console.log(moreFruits);
 console.log(breakfast.length); //shows length of the string - returns 6 

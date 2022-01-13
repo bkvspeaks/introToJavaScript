@@ -28,7 +28,7 @@ console.log(fruits.join(' - '));
 console.log (fruits);
 
 //pop
-let fruits = ['banana', 'apple', 'orange', 'pineapple'];
+//let fruits = ['banana', 'apple', 'orange', 'pineapple'];
 console.log ( fruits.pop(), fruits); //removes the last item from the array
 
 //push
@@ -64,17 +64,17 @@ console.log(allGroceries.slice(1,4)); //start at item 1 up to item 4
 //reverse
 console.log(allGroceries);
 console.log(allGroceries.reverse());
-*/
+
 
 let someNums = [ 5,72,83,4,63,255];
-//console.log(someNums);
-//console.log(someNums.sort());
-//console.log(someNums.sort(function(a,b){return a-b}));
-//console.log('fixed numbers:' , someNums);
-//let sorted = someNums.sort();
-//console.log('numbers:' , someNums);
-//console.log('sorted numbers: ', sorted);
-//console.log('numbers:' , someNums);
+console.log(someNums);
+console.log(someNums.sort());
+console.log(someNums.sort(function(a,b){return a-b}));
+console.log('fixed numbers:' , someNums);
+let sorted = someNums.sort();
+console.log('numbers:' , someNums);
+console.log('sorted numbers: ', sorted);
+console.log('numbers:' , someNums);
 
 
 //Looping through an array

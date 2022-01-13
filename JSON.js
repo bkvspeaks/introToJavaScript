@@ -14,7 +14,7 @@ let students = [
  
  console.log (students);
  
- let teachers = `[
+ let teachers = [
     {
         "name": "Bubba",
         "age": 35,
@@ -25,4 +25,4 @@ let students = [
         "age": 46,
         "height": 270,
     }
- 
+  ]

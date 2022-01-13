@@ -2,11 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
     <title>Intro to JS</title>
     <script>
         function colorChange(id) {
-            var e1 = document.getElementById(id);
+            var el = document.getElementById(id);
             var currentClass = el.getAttribute("class");
             if(currentClass == 'classA') {
                 el.setAttribute("class", "classB");
@@ -37,15 +37,14 @@
    
     <p id = yourage></p>
     <p> years old. Wow! That's old!</p>
-    <!--- <script src = "home.js"> </script>  -->
- <script src = "hello.js"> </script>  
-    <!--<script src = "data.js"> </script>   
-
-console.log(JSON.parse(students)); 
+ <script src = "hello.js"> </script> 
+    <!--<script src = "classes.js"> </script>   -->
+<script>
+//console.log(JSON.parse(students)); 
 //this throws an error: Uncaught SyntaxError: JSON.parse: expected double-quoted property name at line 7 column 5 of the JSON data
 //(this is the "height":70 - if you add the trailing comma (e.g. "height":70,) it throws the error - if you omit it (e.g. "height":70) it's fine)
 // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/JSON_bad_parse 
-    </script> -->
+    </script>
 
     <script>
         var curdate= new Date();
